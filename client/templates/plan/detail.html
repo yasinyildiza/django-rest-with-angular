@@ -1,0 +1,44 @@
+<h3>Plan Details</h3>
+
+<table class="table table-striped">
+    <tr>
+        <td>ID</td>
+        <td>{{ plan.id }}</td>
+    </tr>
+    <tr>
+        <td>User</td>
+        <td>{{ plan.user }}</td>
+    </tr>
+    <tr>
+        <td>Destination</td>
+        <td>{{ plan.destination }}</td>
+    </tr>
+    <tr>
+        <td>Comment</td>
+        <td>{{ plan.comment }}</td>
+    </tr>
+    <tr>
+        <td>Day count</td>
+        <td>{{ plan.day_count }}</td>
+    </tr>
+    <tr>
+        <td>Start date</td>
+        <td>{{ plan.start_date }}</td>
+    </tr>
+    <tr>
+        <td>End date</td>
+        <td>{{ plan.end_date }}</td>
+    </tr>
+    <tr>
+        <td>Created at</td>
+        <td>{{ plan.created_at }}</td>
+    </tr>
+    <tr>
+        <td>Updated at</td>
+        <td>{{ plan.updated_at }}</td>
+    </tr>
+</table>
+<div>
+    <a class="btn btn-primary" ui-sref="editPlanUrl({id:plan.id})">Edit</a>
+    <a class="btn btn-danger" ng-click="deletePlan(plan)">Delete</a>
+</div>

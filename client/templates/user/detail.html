@@ -1,0 +1,20 @@
+<h3>User Details</h3>
+
+<table class="table table-striped">
+    <tr>
+        <td>ID</td>
+        <td>{{ user.id }}</td>
+    </tr>
+    <tr>
+        <td>Username</td>
+        <td>{{ user.username }}</td>
+    </tr>
+    <tr>
+        <td>Email</td>
+        <td>{{ user.email }}</td>
+    </tr>
+</table>
+<div>
+    <a class="btn btn-primary" ui-sref="editUserUrl({id:user.id})">Edit</a>
+    <a class="btn btn-danger" ng-click="deleteUser(user)">Delete</a>
+</div>

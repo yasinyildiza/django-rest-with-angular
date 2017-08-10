@@ -1,0 +1,53 @@
+<div class="form-group" ng-show="userfilter">
+    <label for="user" class="col-sm-2 control-label">User</label>
+    <div class="col-sm-10">
+        <input type="text" ng-model="params.user" class="form-control" placeholder="User"/>
+    </div>
+</div>
+<div class="form-group">
+    <label for="destination" class="col-sm-2 control-label">Destination</label>
+    <div class="col-sm-10">
+        <input type="text" ng-model="params.destination" class="form-control" placeholder="Destination"/>
+    </div>
+</div>
+<div class="form-group">
+    <label for="comment" class="col-sm-2 control-label">Comment</label>
+    <div class="col-sm-10">
+        <input type="text" ng-model="params.comment" class="form-control" placeholder="Comment"/>
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="start_date" class="col-sm-2 control-label">Start date</label>
+    <div class="col-sm-10">
+        <div class="form-group row">
+            <label for="start_date_min" class="col-sm-1 control-label">Min</label>
+            <div class="col-sm-4">
+                <input type="date" ng-model="params.start_date_min" class="form-control" placeholder="Start date (min)">
+            </div>
+            <label for="start_date_max" class="col-sm-1 control-label">Max</label>
+            <div class="col-sm-4">
+                <input type="date" ng-model="params.start_date_max" class="form-control" placeholder="Start date (max)"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="end_date" class="col-sm-2 control-label">End date</label>
+    <div class="col-sm-10">
+        <div class="form-group row">
+            <label for="end_date_min" class="col-sm-1 control-label">Min</label>
+            <div class="col-sm-4">
+                <input type="date" ng-model="params.end_date_min" class="form-control" placeholder="End date (min)">
+            </div>
+            <label for="end_date_max" class="col-sm-1 control-label">Max</label>
+            <div class="col-sm-4">
+                <input type="date" ng-model="params.end_date_max" class="form-control" placeholder="End date (max)"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button ng-click="load()" class="btn btn-sm btn-primary">Search</button>
+<br/>

@@ -1,0 +1,51 @@
+/TMS/media/test_file.txt
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Python compiled files
+*.pyc
+
+# Coverage file
+.coverage
+
+# Coverage output folder
+htmlcov
+
+# sqlite3 db file
+db.sqlite3
+
+# bower components
+bower_components/
+
+# node modules
+node_modules/
+
+# run command
+run.cmd

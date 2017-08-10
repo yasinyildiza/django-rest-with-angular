@@ -1,0 +1,19 @@
+<h3>{{ title }}</h3>
+
+<div ng-if="search != null" ng-include="search"></div>
+
+<br/>
+
+<div>Displaying {{ page }} of {{ pcount }} pages (max {{ size }} items per page)</div>
+<div>Displaying {{ (page-1)*size+1 }}-{{ (page-1)*size+records.length }} ({{ records.length }}) of {{ rcount }} records</div>
+
+<br/>
+
+<table class="table table-striped">
+    <tr ng-include="header"></tr>
+    <tr ng-repeat="record in records" ng-include="row"></tr>
+</table>
+
+<br/>
+
+<div ng-include="'templates/pagination.html'"></div>

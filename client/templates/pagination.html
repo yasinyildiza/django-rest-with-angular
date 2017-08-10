@@ -1,0 +1,12 @@
+<label>Page</label>
+<button ng-click="first()" class="btn btn-sm btn-primary">First</button>
+<button ng-click="prev()" ng-disabled="page == 1" class="btn btn-sm btn-primary">Prev</button>
+<span>{{ page }}</span>
+<span>/</span>
+<span>{{ pcount }}</span>
+<button ng-click="next()" ng-disabled="page == pcount" class="btn btn-sm btn-primary">Next</button>
+<button ng-click="last()" class="btn btn-sm btn-primary">Last</button>
+<br/>
+
+<label>Size</label>
+<button ng-click="setSize(npp)" ng-repeat="npp in npp_list" ng-class="{active: (npp == size)}" class="btn btn-sm btn-primary">{{ npp }}</button>
